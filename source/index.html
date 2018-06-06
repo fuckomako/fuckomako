@@ -63,29 +63,52 @@
       </div>
     </div>
 
-    <div class="project">
+    <div class="filter">
+      <span>
+        <select id="filter">
+          <option value="all">все</option>
+          <option value="adaptive">Адаптивный</option>
+          <option value="static">Статичный</option>
+          <option value="last">Последние</option>
+        </select>
+      </span>
+    </div>
+
+    <div class="project" id="projects">
       <div class="project__wrapper container">
-        <div class="project-block">
+        <div class="project-block" data-color="adaptive">
           <img src="img/shoes.jpg" alt="проект">
           <h4 class="project-block__title">Проект - Обувной магазин</h4>
           <div class="project-block__info">Адаптивная верстка</div>
           <div class="project-block__site"><a href="http://obuv-stok.ru/" target="_blank">obuv-stok.ru</a></div>
         </div>
-        <div class="project-block">
+        <div class="project-block" data-color="static">
           <img src="img/givc.jpg" alt="проект">
           <h4 class="project-block__title">Проект - ГИВЦ</h4>
           <div class="project-block__info">Адаптивная верстка</div>
           <div class="project-block__site"><a href="http://givc.ru/" target="_blank">givc.ru</a></div>
         </div>
-        <div class="project-block">
+        <div class="project-block" data-color="adaptive">
           <img src="img/nashamama.jpg" alt="проект">
           <h4 class="project-block__title">Интернет Магазин - Наша Мама</h4>
           <div class="project-block__info">Адаптивная верстка</div>
           <div class="project-block__site"><a href="https://nashamama-market.ru/" target = "_blank">nashamama-market.ru</a></div>
         </div>
-        <div class="project-block">
+        <div class="project-block" data-color="last">
           <img src="img/museum.jpg" alt="проект">
           <h4 class="project-block__title">Проект Мишка</h4>
+          <div class="project-block__info">Адаптивная верстка</div>
+          <div class="project-block__site"><a href="http://sevmuseum.ru/" target="_blank">sevmuseum.ru</a></div>
+        </div>
+        <div class="project-block" data-color="last">
+          <img src="img/1.jpg" alt="проект">
+          <h4 class="project-block__title">Проект Мишка-1</h4>
+          <div class="project-block__info">Адаптивная верстка</div>
+          <div class="project-block__site"><a href="http://sevmuseum.ru/" target="_blank">sevmuseum.ru</a></div>
+        </div>
+        <div class="project-block" data-color="adaptive">
+          <img src="img/1.jpg" alt="проект">
+          <h4 class="project-block__title">Проект Мишка-2</h4>
           <div class="project-block__info">Адаптивная верстка</div>
           <div class="project-block__site"><a href="http://sevmuseum.ru/" target="_blank">sevmuseum.ru</a></div>
         </div>
@@ -133,6 +156,7 @@
 
   <script src="js/modal.js"></script>
   <script src="js/move.js"></script>
+  <script src="js/filter.js"></script>
 
 </body>
 </html>
